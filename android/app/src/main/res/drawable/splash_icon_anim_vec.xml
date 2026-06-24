@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  MedCare animated-splash icon vector
+  The outer glow ring lives in "pulseGroup" so it can be targeted
+  by the scale animator, giving a pulse/spring feel on launch.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+
+    <!-- ── Outer pulse ring – animated via pulseGroup ─── -->
+    <group
+        android:name="pulseGroup"
+        android:pivotX="64"
+        android:pivotY="64"
+        android:scaleX="0.85"
+        android:scaleY="0.85">
+        <path
+            android:fillColor="#507C3AED"
+            android:pathData="M64,2 A62,62 0 1,0 64,126 A62,62 0 1,0 64,2 Z" />
+    </group>
+
+    <!-- ── Static inner badge (not animated) ──────────── -->
+
+    <!-- Frosted-glass border ring -->
+    <path
+        android:fillColor="#55FFFFFF"
+        android:pathData="M64,10 A54,54 0 1,0 64,118 A54,54 0 1,0 64,10 Z" />
+
+    <!-- Badge fill – light indigo (#E0E7FF) -->
+    <path
+        android:fillColor="#E0E7FF"
+        android:pathData="M64,15 A49,49 0 1,0 64,113 A49,49 0 1,0 64,15 Z" />
+
+    <!-- Medical cross – horizontal bar -->
+    <path
+        android:fillColor="#3730A3"
+        android:pathData="M36,56 L92,56 L92,72 L36,72 Z" />
+
+    <!-- Medical cross – vertical bar -->
+    <path
+        android:fillColor="#3730A3"
+        android:pathData="M56,36 L72,36 L72,92 L56,92 Z" />
+
+</vector>

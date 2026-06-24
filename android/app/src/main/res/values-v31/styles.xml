@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 12+ (API 31+) splash-screen configuration.
+  On API 31+ the system enforces its own splash screen BEFORE the
+  Flutter engine starts. Without these attributes Android shows a
+  white/default screen while the engine loads.
+
+  windowSplashScreenBackground    – fills the screen with the same deep
+                                    purple used by the Flutter splash view.
+  windowSplashScreenAnimatedIcon  – shows the animated medical-cross badge
+                                    (outer ring pulses/pops via ObjectAnimator).
+  windowSplashScreenIconBackground– lighter indigo circle behind the icon,
+                                    creating a subtle glow-ring effect against
+                                    the deep purple background.
+
+  After the engine initialises the NormalTheme / launch_background take over
+  briefly (they share the same purple palette so the transition is seamless)
+  before the Flutter SplashView renders its own animated sequence.
+-->
+<resources>
+
+    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <!-- Existing attributes (still used for window background) -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+        <item name="android:windowFullscreen">true</item>
+
+        <!-- ── Android 12+ SplashScreen API ───────────────────────── -->
+        <!-- Background colour that fills the entire screen -->
+        <item name="android:windowSplashScreenBackground">#1E0A3C</item>
+        <!-- Animated icon (outer glow ring pulses/pops on launch) -->
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_icon_anim</item>
+        <!-- Circle behind the icon — lighter indigo to create a glow ring -->
+        <item name="android:windowSplashScreenIconBackgroundColor">#312E81</item>
+    </style>
+
+    <style name="NormalTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Pulse animator for the MedCare launch splash icon.
+  Scales the outer glow ring from 0.85 → 1.0 with an overshoot
+  so the ring "pops" past its natural size before settling — giving
+  a pleasant pulse/spring feel on app launch.
+-->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="together">
+
+    <objectAnimator
+        android:propertyName="scaleX"
+        android:valueFrom="0.85"
+        android:valueTo="1.0"
+        android:duration="600"
+        android:interpolator="@android:interpolator/overshoot" />
+
+    <objectAnimator
+        android:propertyName="scaleY"
+        android:valueFrom="0.85"
+        android:valueTo="1.0"
+        android:duration="600"
+        android:interpolator="@android:interpolator/overshoot" />
+
+</set>

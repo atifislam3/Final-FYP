@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  MedCare animated-splash icon.
+  Wires the splash_pulse animator to the "pulseGroup" in
+  splash_icon_anim_vec so the outer glow ring pops/pulses on launch.
+  Referenced by values-v31/styles.xml → android:windowSplashScreenAnimatedIcon.
+-->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/splash_icon_anim_vec">
+
+    <target
+        android:name="pulseGroup"
+        android:animation="@animator/splash_pulse" />
+
+</animated-vector>

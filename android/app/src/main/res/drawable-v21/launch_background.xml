@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  MedCare native launch background (Android 5+ / API 21+)
+  Deep purple/indigo gradient · corner ambient orbs · centred badge
+  Shown while the Flutter engine initialises.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 1. Rich four-stop diagonal gradient background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:startColor="#1E0A3C"
+                android:centerColor="#312E81"
+                android:endColor="#4C1D95"
+                android:angle="135" />
+        </shape>
+    </item>
+
+    <!-- 2. Top-left ambient orb (indigo glow) -->
+    <item
+        android:bottom="480dp"
+        android:right="200dp">
+        <shape android:shape="oval">
+            <solid android:color="#38818CF8" />
+        </shape>
+    </item>
+
+    <!-- 3. Bottom-right ambient orb (violet glow) -->
+    <item
+        android:top="480dp"
+        android:left="200dp">
+        <shape android:shape="oval">
+            <solid android:color="#30A78BFA" />
+        </shape>
+    </item>
+
+    <!-- 4. Bottom-centre accent orb -->
+    <item
+        android:top="600dp"
+        android:left="80dp"
+        android:right="80dp">
+        <shape android:shape="oval">
+            <solid android:color="#286366F1" />
+        </shape>
+    </item>
+
+    <!-- 5. Centred badge (glow ring + light-indigo circle + cross) -->
+    <item>
+        <bitmap
+            android:src="@drawable/splash_center"
+            android:gravity="center" />
+    </item>
+
+</layer-list>

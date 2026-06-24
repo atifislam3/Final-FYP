@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1020071568080",
+    "firebase_url": "https://personalmedicinereminder-default-rtdb.firebaseio.com",
+    "project_id": "personalmedicinereminder",
+    "storage_bucket": "personalmedicinereminder.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020071568080:android:882ba9374ebec5f370f4d5",
+        "android_client_info": {
+          "package_name": "com.example.personal_medicine_reminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020071568080-t2a6sv955m08qsaqm1u8be02ecej0ht1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.personal_medicine_reminder",
+            "certificate_hash": "e63fd5666e28324dcf181c9634d7092d0eff7ba1"
+          }
+        },
+        {
+          "client_id": "1020071568080-1p8brsvg7kgbbto17rkke24epllq7a8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOl6LOfgeLHnLrPTMzIJGC_XZSeLjgeZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020071568080-1p8brsvg7kgbbto17rkke24epllq7a8p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1020071568080-hnjicshsth1a1rbpd863h9tjhauht3gm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.personalMedicineReminder"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
